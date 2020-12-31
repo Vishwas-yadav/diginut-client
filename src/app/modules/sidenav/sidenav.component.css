@@ -1,0 +1,7 @@
+.navbar-parent{
+    height: 100%;
+    background-color:white;
+    position: fixed;
+    top:0;
+    /* transition: left 4s ease-in-out; */
+}

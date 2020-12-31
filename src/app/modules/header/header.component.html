@@ -1,0 +1,19 @@
+<div class="heading-parent container" (scroll)="onScroll($event)" [class.fix-header]="fixedHeader">
+  <div class="row" [class.mt-2]="!fixedHeader">
+    <div class="col-8">
+      <img src="../../../assets/logo/logo-main.png" class="logo-for-mobile" [class.logo-for-mobile-reset]="fixedHeader">
+    </div>
+    <div class="col-4">
+      <div class="menu-bars-div mt-3 mr-2">
+        <i class="fa fa-bars theme-color menu-bar-icon" (click)="onToggle()"></i>
+      </div>
+    </div>
+  </div>
+  <app-sidenav [hidden]="!isVisible" (someEvent)="eventReceived($event)" class="ccc">
+  </app-sidenav>
+
+  <div class="row mobile-hide">
+    hehehhehehe
+    <!-- FOR DESKTOP CODE HERE -->
+  </div>
+</div>
